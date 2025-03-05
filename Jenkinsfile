@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/deardreamyy/inclass_7_K25.git'
+                git branch: 'main', url:'https://github.com/deardreamyy/inclass_7_K25.git'
             }
         }
         stage('Run Tests') {
