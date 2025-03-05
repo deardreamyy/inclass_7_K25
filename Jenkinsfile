@@ -2,15 +2,15 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS_ID = 'dockerhub-credentials'
-        DOCKERHUB_REPO = 'amirdi/devopschain'
-        DOCKER_IMAGE_TAG = 'ver2'
+        DOCKERHUB_CREDENTIALS_ID = 'dockerhub'
+        DOCKERHUB_REPO = 'deardreamyy/lecture_7'
+        DOCKER_IMAGE_TAG = 'latest_v1'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/ADirin/devopschain_f2024.git'
+                git 'https://github.com/deardreamyy/inclass_7_K25.git'
             }
         }
         stage('Run Tests') {
